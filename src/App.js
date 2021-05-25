@@ -15,7 +15,7 @@ function App() {
           <Route exact path="/recipes" component={RecipesList} />
           {/* :recipe shows that the value for recipe is dynamic */}
           <Route path="/search/:recipe" component={RecipeSearch} />
-          <Route path="*" render={() => {return <div>404 ERROR NOT FOUND</div>}} />
+          <Route path="*" render={() => {return <div>PAGE NOT FOUND</div>}} />
         </Switch>
       </Router>
     </div>
