@@ -9,7 +9,7 @@ import RecipeSearch from './components/RecipeSearch';
 function App() {
   return (
     <div className="App">
-      <Router basename="/">
+      <Router>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/recipes" component={RecipesList} />
