@@ -74,28 +74,28 @@ class Recipes extends Component {
                             <Grid container className="searchResultsGrid" spacing={4} justify="center">
                                 {this.state.Lunch.map((meal, index) => {
                                     if (!meal.dishType || !meal.mealType ){
-                                        return;
+                                        return <div></div>;
                                     }
                                     return <Grid item key={`${meal.label}-${index}`}><Recipe meal={meal} /></Grid>
                                 })} 
                             
                                 {this.state.Dinner.map((meal, index) => {
                                     if (!meal.dishType || !meal.mealType ){
-                                        return;
+                                        return <div></div>;
                                     }
                                     return <Grid item key={`${meal.label}-${index}`}><Recipe meal={meal} /></Grid>
                                 })} 
 
                                 {this.state.Snack.map((meal, index) => {
                                     if (!meal.dishType || !meal.mealType ){
-                                        return;
+                                        return <div></div>;
                                     }
                                     return <Grid item key={`${meal.label}-${index}`}><Recipe meal={meal} /></Grid>
                                 })} 
 
                                 {this.state.Teatime.map((meal, index) => {
                                     if (!meal.dishType || !meal.mealType ){
-                                        return;
+                                        return <div></div>;
                                     }
                                     return <Grid item key={`${meal.label}-${index}`}><Recipe meal={meal} /></Grid>
                                 })} 
